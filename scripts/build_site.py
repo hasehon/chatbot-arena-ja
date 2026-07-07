@@ -13,6 +13,7 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_PATH = os.path.join(BASE_DIR, "data", "combined.json")
+HISTORY_PATH = os.path.join(BASE_DIR, "data", "rank_history.json")
 TEMPLATE_DIR = os.path.join(BASE_DIR, "templates")
 OUTPUT_DIR = os.path.join(BASE_DIR, "docs")
 
@@ -81,6 +82,63 @@ def load_data():
     return normalized
 
 
+def load_history():
+    if os.path.exists(HISTORY_PATH):
+        with open(HISTORY_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return None
+
+
+def update_history(history, today, current_ranks):
+    """前日比較用の履歴を更新する。
+
+    baseline = 「前日(最後に日付が変わったとき)の順位」、latest = 「今日の順位」。
+    同じ日に複数回ビルドしても baseline は動かないので、
+    手動実行を繰り返しても前日比がゼロにリセットされない。
+    """
+    if history is None:
+        return {
+            "baseline_date": None,
+            "baseline": {},
+            "latest_date": today,
+            "latest": current_ranks,
+        }
+    if history.get("latest_date") != today:
+        return {
+            "baseline_date": history.get("latest_date"),
+            "baseline": history.get("latest") or {},
+            "latest_date": today,
+            "latest": current_ranks,
+        }
+    return {
+        "baseline_date": history.get("baseline_date"),
+        "baseline": history.get("baseline") or {},
+        "latest_date": today,
+        "latest": current_ranks,
+    }
+
+
+def apply_rank_deltas(data, baseline):
+    """各行に前日比 delta(正=上昇)と is_new(新登場)を書き込む。
+
+    baseline がまだ無いカテゴリ(初回ビルドなど)は全行 delta=None のままにし、
+    全モデルが NEW 表示になるのを避ける。
+    """
+    for cat_id, rows in data.items():
+        prev_ranks = baseline.get(cat_id) or {}
+        for row in rows:
+            prev = prev_ranks.get(row["model"])
+            if not prev_ranks:
+                row["delta"] = None
+                row["is_new"] = False
+            elif prev is None:
+                row["delta"] = None
+                row["is_new"] = True
+            else:
+                row["delta"] = int(prev) - row["rank"]
+                row["is_new"] = False
+
+
 def build():
     env = Environment(
         loader=FileSystemLoader(TEMPLATE_DIR),
@@ -90,11 +148,22 @@ def build():
 
     data = load_data()
     jst = timezone(timedelta(hours=9))
-    updated_at = datetime.now(jst).strftime("%Y-%m-%d %H:%M")
+    now = datetime.now(jst)
+    updated_at = now.strftime("%Y-%m-%d %H:%M")
+
+    current_ranks = {
+        cat_id: {row["model"]: row["rank"] for row in rows}
+        for cat_id, rows in data.items()
+    }
+    history = update_history(load_history(), now.strftime("%Y-%m-%d"), current_ranks)
+    apply_rank_deltas(data, history["baseline"])
 
     html = template.render(categories=CATEGORIES, data=data, updated_at=updated_at)
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(os.path.dirname(HISTORY_PATH), exist_ok=True)
+    with open(HISTORY_PATH, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
     with open(os.path.join(OUTPUT_DIR, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
 

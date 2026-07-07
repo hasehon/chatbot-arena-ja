@@ -25,8 +25,14 @@ def fetch_category(name):
     # レスポンスは {"meta": {...}, "models": [...]} の形。将来の変更に備え、
     # 素の配列で返ってきた場合もそのまま扱えるようにしておく。
     if isinstance(payload, dict):
-        return payload.get("models", [])
-    return payload
+        models = payload.get("models", [])
+    else:
+        models = payload
+    # HTTP 200 でも中身が空(models キー欠落・空リスト)なら失敗として扱う。
+    # ここで例外にしないと、正常だった前回キャッシュを空データで上書きしてしまう。
+    if not models:
+        raise ValueError(f"empty response for category '{name}'")
+    return models
 
 
 def load_cache(name):

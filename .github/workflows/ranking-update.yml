@@ -9,6 +9,12 @@ permissions:
   contents: write
   issues: write
 
+# 定時実行と手動実行が重なっても、同時に走って push が衝突しないよう
+# 1本ずつ順番に実行する(cancel せず待たせる)
+concurrency:
+  group: ranking-update
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -37,15 +43,24 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add docs data
           git diff --cached --quiet || git commit -m "Update ranking data"
+          # 実行中に他のコミットが push されていても失敗しないよう、直前に取り込む
+          git pull --rebase origin master
           git push
 
       - name: File issue on data fetch failure
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
+          ISSUE_TITLE: "ランキングデータの取得に失敗したカテゴリがあります"
         run: |
           if [ -f data/failures.txt ]; then
-            gh issue create \
-              --title "ランキングデータの取得に失敗したカテゴリがあります" \
-              --body "$(cat data/failures.txt)"
+            # 同じタイトルの未クローズIssueが既にあれば、重複して起票しない
+            existing=$(gh issue list --state open --search "in:title $ISSUE_TITLE" --json number --jq 'length')
+            if [ "$existing" = "0" ]; then
+              gh issue create \
+                --title "$ISSUE_TITLE" \
+                --body "$(cat data/failures.txt)"
+            else
+              echo "既に未クローズのIssueがあるため、新規作成をスキップしました"
+            fi
           fi

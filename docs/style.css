@@ -18,6 +18,10 @@
   --silver-bg: #ececea;
   --bronze: #a05a22;
   --bronze-bg: #f9e6d5;
+  --up: #0c8a3f;
+  --up-bg: #dff3e5;
+  --down: #c2372f;
+  --down-bg: #fbe6e3;
   --shadow-card: 0 1px 2px rgba(24, 24, 18, 0.05), 0 10px 30px rgba(24, 24, 18, 0.07);
   --shadow-pop: 0 1px 3px rgba(24, 24, 18, 0.08), 0 14px 40px rgba(24, 24, 18, 0.10);
 }
@@ -41,6 +45,10 @@ html[data-theme="dark"] {
   --silver-bg: #30322f;
   --bronze: #dd9a5d;
   --bronze-bg: #3a2a1c;
+  --up: #4bd688;
+  --up-bg: #1a3524;
+  --down: #ef8078;
+  --down-bg: #3c211e;
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 10px 30px rgba(0, 0, 0, 0.35);
   --shadow-pop: 0 1px 3px rgba(0, 0, 0, 0.5), 0 14px 40px rgba(0, 0, 0, 0.45);
 }
@@ -257,9 +265,13 @@ html[data-theme="dark"] .theme-toggle .icon-moon { display: block; fill: var(--i
 .podium-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 6px;
   margin-bottom: 10px;
 }
+
+.podium-head .delta { margin-left: 0; }
+
+.podium-votes { margin-left: auto; }
 
 .medal {
   display: inline-flex;
@@ -470,6 +482,25 @@ th[aria-sort="descending"] .sort-arrow::after { content: "↓"; opacity: 1; }
 .rank-cell.m2 { background: var(--silver-bg); color: var(--silver); }
 .rank-cell.m3 { background: var(--bronze-bg); color: var(--bronze); }
 
+/* ---------- Rank delta (前日比) ---------- */
+.delta {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.delta.up { color: var(--up); background: var(--up-bg); }
+.delta.down { color: var(--down); background: var(--down-bg); }
+.delta.same { color: var(--ink-3); background: var(--surface-2); }
+.delta.new { color: var(--accent-strong); background: var(--accent-soft); }
+
 .model {
   display: flex;
   align-items: center;
@@ -488,7 +519,7 @@ th[aria-sort="descending"] .sort-arrow::after { content: "↓"; opacity: 1; }
   font-size: 12px;
   font-weight: 700;
   color: #fff;
-  background: var(--ink-3);
+  background: var(--avatar-bg, var(--ink-3));
   overflow: hidden;
 }
 
@@ -499,6 +530,7 @@ th[aria-sort="descending"] .sort-arrow::after { content: "↓"; opacity: 1; }
 }
 
 .avatar.has-logo { background: var(--surface-2); }
+.avatar.has-logo .avatar-fallback { display: none; }
 
 .model-text { min-width: 0; }
 

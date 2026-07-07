@@ -102,14 +102,17 @@
   }
 
   function avatarHtml(provider) {
+    // XSS対策: 企業名由来の文字列を onerror などの属性値に埋め込まない。
+    // 頭文字フォールバックを最初からDOMに置いておき、ロゴ読込失敗時は
+    // 定数文字列の onerror がクラスを外すだけでフォールバックが現れる。
     var logo = providerLogoUrl(provider);
     var color = providerColor(provider);
     var initial = escapeText(String(provider).charAt(0).toUpperCase());
-    if (logo) {
-      return '<span class="avatar has-logo"><img src="' + logo + '" alt="" loading="lazy" ' +
-        'onerror="this.parentNode.classList.remove(\'has-logo\');this.parentNode.style.background=\'' + color + '\';this.parentNode.textContent=\'' + initial + '\'"></span>';
-    }
-    return '<span class="avatar" style="background:' + color + '">' + initial + "</span>";
+    var img = logo
+      ? '<img src="' + logo + '" alt="" loading="lazy" onerror="this.parentNode.classList.remove(\'has-logo\');this.remove()">'
+      : "";
+    return '<span class="avatar' + (logo ? " has-logo" : "") + '" style="--avatar-bg:' + color + '">' +
+      '<span class="avatar-fallback">' + initial + "</span>" + img + "</span>";
   }
 
   /* ---------- Data helpers ---------- */
@@ -121,6 +124,16 @@
   function ciLabel(ci) {
     // "±15程度" -> "±15"
     return String(ci).replace(/程度$/, "");
+  }
+
+  function deltaHtml(r) {
+    // 前日比の順位変動。ビルド側でdeltaが付与されていない古いデータでも
+    // そのまま動くよう、未定義はすべて「表示なし」に倒す。
+    if (r.is_new) return '<span class="delta new">NEW</span>';
+    if (r.delta === null || r.delta === undefined) return "";
+    if (r.delta > 0) return '<span class="delta up">▲' + r.delta + "</span>";
+    if (r.delta < 0) return '<span class="delta down">▼' + (-r.delta) + "</span>";
+    return '<span class="delta same">－</span>';
   }
 
   /* ---------- Tab counts ---------- */
@@ -140,6 +153,7 @@
         '<article class="podium-card p' + n + '">' +
           '<div class="podium-head">' +
             '<span class="medal m' + n + '">' + n + "</span>" +
+            deltaHtml(r) +
             '<span class="podium-votes">' + escapeText(r.votes_text) + "票</span>" +
           "</div>" +
           '<h2 class="podium-model">' + escapeText(r.model) + "</h2>" +
@@ -237,7 +251,7 @@
       var pct = 8 + 92 * ((r.score - min) / span);
       return (
         "<tr>" +
-          '<td class="rank-td"><span class="rank-cell' + medal + '">' + r.rank + "</span></td>" +
+          '<td class="rank-td"><span class="rank-cell' + medal + '">' + r.rank + "</span>" + deltaHtml(r) + "</td>" +
           "<td>" +
             '<div class="model">' + avatarHtml(r.provider) +
               '<div class="model-text">' +
