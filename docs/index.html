@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生成AIモデル ランキング(日本語版)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="site-header">
+    <h1>生成AIモデル ランキング</h1>
+    <p class="updated">最終更新: 2026-07-07 12:00 (JST)</p>
+  </header>
+  <p class="note">arena.ai のランキングデータをもとに構成した非公式の日本語ミラーサイトです。(このプレビューはサンプルデータです。実データは fetch_data.py 実行後に反映されます)</p>
+
+  <div class="tabs" role="tablist" aria-label="カテゴリ">
+    <button class="tab active" role="tab" id="tab-text" aria-selected="true" aria-controls="panel-text" tabindex="0" data-cat="text">テキスト</button>
+    <button class="tab" role="tab" id="tab-code" aria-selected="false" aria-controls="panel-code" tabindex="-1" data-cat="code">コード</button>
+    <button class="tab" role="tab" id="tab-vision" aria-selected="false" aria-controls="panel-vision" tabindex="-1" data-cat="vision">画像理解</button>
+    <button class="tab" role="tab" id="tab-text-to-image" aria-selected="false" aria-controls="panel-text-to-image" tabindex="-1" data-cat="text-to-image">画像生成</button>
+  </div>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="モデル名で検索" aria-label="モデル名で検索">
+    <select id="company-filter" aria-label="提供企業で絞り込み">
+      <option value="">すべての企業</option>
+    </select>
+  </div>
+
+  <section id="panel-text" role="tabpanel" aria-labelledby="tab-text" class="panel">
+    <table class="ranking-table" data-cat="text">
+      <thead>
+        <tr>
+          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>モデル</th>
+          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>提供企業</th>
+          <th class="chevron-col"><span class="sr-only">詳細</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  <section id="panel-code" role="tabpanel" aria-labelledby="tab-code" class="panel hidden">
+    <table class="ranking-table" data-cat="code">
+      <thead>
+        <tr>
+          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>モデル</th>
+          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>提供企業</th>
+          <th class="chevron-col"><span class="sr-only">詳細</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  <section id="panel-vision" role="tabpanel" aria-labelledby="tab-vision" class="panel hidden">
+    <table class="ranking-table" data-cat="vision">
+      <thead>
+        <tr>
+          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>モデル</th>
+          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>提供企業</th>
+          <th class="chevron-col"><span class="sr-only">詳細</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  <section id="panel-text-to-image" role="tabpanel" aria-labelledby="tab-text-to-image" class="panel hidden">
+    <table class="ranking-table" data-cat="text-to-image">
+      <thead>
+        <tr>
+          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>モデル</th>
+          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>提供企業</th>
+          <th class="chevron-col"><span class="sr-only">詳細</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://arena.ai">arena.ai</a></p>
+  </footer>
+</main>
+
+<script type="application/json" id="arena-data">
+{
+  "text": [
+    {"rank":1,"model":"GPT-5.2","provider":"OpenAI","score":1421,"ci_text":"±8程度","votes_text":"142,300"},
+    {"rank":2,"model":"Claude Opus 4.8","provider":"Anthropic","score":1418,"ci_text":"±7程度","votes_text":"138,900"},
+    {"rank":3,"model":"Gemini 3 Pro","provider":"Google","score":1409,"ci_text":"±8程度","votes_text":"121,050"},
+    {"rank":4,"model":"Grok 5","provider":"xAI","score":1392,"ci_text":"±9程度","votes_text":"88,410"},
+    {"rank":5,"model":"DeepSeek V4","provider":"DeepSeek","score":1380,"ci_text":"±11程度","votes_text":"76,220"},
+    {"rank":6,"model":"Qwen3-Max","provider":"Alibaba","score":1365,"ci_text":"±11程度","votes_text":"64,530"}
+  ],
+  "code": [
+    {"rank":1,"model":"Claude Opus 4.8","provider":"Anthropic","score":1455,"ci_text":"±6程度","votes_text":"99,120"},
+    {"rank":2,"model":"GPT-5.2","provider":"OpenAI","score":1440,"ci_text":"±7程度","votes_text":"95,340"},
+    {"rank":3,"model":"Gemini 3 Pro","provider":"Google","score":1421,"ci_text":"±9程度","votes_text":"81,760"},
+    {"rank":4,"model":"DeepSeek V4","provider":"DeepSeek","score":1408,"ci_text":"±9程度","votes_text":"70,110"},
+    {"rank":5,"model":"Grok 5","provider":"xAI","score":1390,"ci_text":"±10程度","votes_text":"58,900"},
+    {"rank":6,"model":"Qwen3-Max","provider":"Alibaba","score":1372,"ci_text":"±12程度","votes_text":"49,880"}
+  ],
+  "vision": [
+    {"rank":1,"model":"Gemini 3 Pro","provider":"Google","score":1398,"ci_text":"±8程度","votes_text":"67,400"},
+    {"rank":2,"model":"GPT-5.2","provider":"OpenAI","score":1385,"ci_text":"±9程度","votes_text":"61,220"},
+    {"rank":3,"model":"Claude Opus 4.8","provider":"Anthropic","score":1379,"ci_text":"±8程度","votes_text":"58,510"},
+    {"rank":4,"model":"Qwen3-Max","provider":"Alibaba","score":1350,"ci_text":"±11程度","votes_text":"42,300"},
+    {"rank":5,"model":"Grok 5","provider":"xAI","score":1340,"ci_text":"±11程度","votes_text":"37,650"},
+    {"rank":6,"model":"DeepSeek V4","provider":"DeepSeek","score":1322,"ci_text":"±12程度","votes_text":"31,900"}
+  ],
+  "text-to-image": [
+    {"rank":1,"model":"Midjourney v7","provider":"Midjourney","score":1310,"ci_text":"±9程度","votes_text":"54,200"},
+    {"rank":2,"model":"Imagen 4","provider":"Google","score":1298,"ci_text":"±10程度","votes_text":"49,870"},
+    {"rank":3,"model":"FLUX 2","provider":"Black Forest Labs","score":1285,"ci_text":"±10程度","votes_text":"41,330"},
+    {"rank":4,"model":"DALL-E 4","provider":"OpenAI","score":1270,"ci_text":"±11程度","votes_text":"38,010"},
+    {"rank":5,"model":"Stable Diffusion 4","provider":"Stability AI","score":1245,"ci_text":"±12程度","votes_text":"29,440"},
+    {"rank":6,"model":"Ideogram 3","provider":"Ideogram","score":1230,"ci_text":"±12程度","votes_text":"22,180"}
+  ]
+}
+</script>
+<script src="site.js"></script>
+</body>
+</html>

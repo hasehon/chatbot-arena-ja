@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>生成AIモデル ランキング(日本語版)</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="site-header">
+    <h1>生成AIモデル ランキング</h1>
+    <p class="updated">最終更新: {{ updated_at }} (JST)</p>
+  </header>
+  <p class="note">arena.ai のランキングデータをもとに構成した非公式の日本語ミラーサイトです。</p>
+
+  <div class="tabs" role="tablist" aria-label="カテゴリ">
+    {% for cat in categories %}
+    <button class="tab{% if loop.first %} active{% endif %}"
+            role="tab"
+            id="tab-{{ cat.id }}"
+            aria-selected="{{ 'true' if loop.first else 'false' }}"
+            aria-controls="panel-{{ cat.id }}"
+            tabindex="{{ '0' if loop.first else '-1' }}"
+            data-cat="{{ cat.id }}">{{ cat.label }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="controls">
+    <input type="search" id="search" placeholder="モデル名で検索" aria-label="モデル名で検索">
+    <select id="company-filter" aria-label="提供企業で絞り込み">
+      <option value="">すべての企業</option>
+    </select>
+  </div>
+
+  {% for cat in categories %}
+  <section id="panel-{{ cat.id }}"
+           role="tabpanel"
+           aria-labelledby="tab-{{ cat.id }}"
+           class="panel{% if not loop.first %} hidden{% endif %}">
+    <table class="ranking-table" data-cat="{{ cat.id }}">
+      <thead>
+        <tr>
+          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>モデル</th>
+          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+          <th>提供企業</th>
+          <th class="chevron-col"><span class="sr-only">詳細</span></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+  {% endfor %}
+
+  <footer class="site-footer">
+    <p>Data sourced from <a href="https://arena.ai">arena.ai</a></p>
+  </footer>
+</main>
+
+<script type="application/json" id="arena-data">{{ data | tojson }}</script>
+<script src="site.js"></script>
+</body>
+</html>

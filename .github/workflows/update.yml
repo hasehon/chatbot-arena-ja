@@ -1,0 +1,51 @@
+name: Update ranking site
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch ranking data
+        run: python scripts/fetch_data.py
+
+      - name: Run tests
+        run: pytest
+
+      - name: Build site
+        run: python scripts/build_site.py
+
+      - name: Commit updated site
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs data
+          git diff --cached --quiet || git commit -m "Update ranking data"
+          git push
+
+      - name: File issue on data fetch failure
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -f data/failures.txt ]; then
+            gh issue create \
+              --title "ランキングデータの取得に失敗したカテゴリがあります" \
+              --body "$(cat data/failures.txt)"
+          fi
