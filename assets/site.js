@@ -94,10 +94,12 @@
         ? '<img src="' + logoUrl + '" alt="" width="16" height="16" loading="lazy" class="provider-logo" onerror="this.remove()">'
         : "";
 
+      var rankClass = "rank-badge" + (r.rank >= 1 && r.rank <= 3 ? " rank-" + r.rank : "");
+
       var tr = document.createElement("tr");
       tr.className = "row";
       tr.innerHTML =
-        '<td data-label="順位">' + r.rank + "</td>" +
+        '<td data-label="順位"><span class="' + rankClass + '">' + r.rank + "</span></td>" +
         '<td data-label="モデル"><span class="model-cell">' + logoHtml + "<span>" + escapeText(r.model) + "</span></span></td>" +
         '<td data-label="スコア">' + r.score + "</td>" +
         '<td data-label="提供企業"><span class="badge">' + escapeText(r.provider) + "</span></td>" +
