@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>生成AIモデル ランキング(日本語版)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main class="wrap">
   <header class="site-header">
     <h1>生成AIモデル ランキング</h1>
-    <p class="updated">最終更新: 2026-07-07 11:48 (JST)</p>
+    <p class="updated">最終更新: 2026-07-07 12:12 (JST)</p>
   </header>
   <p class="note">arena.ai のランキングデータをもとに構成した非公式の日本語ミラーサイトです。</p>
 
@@ -62,72 +65,80 @@
            role="tabpanel"
            aria-labelledby="tab-text"
            class="panel">
-    <table class="ranking-table" data-cat="text">
-      <thead>
-        <tr>
-          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>モデル</th>
-          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>提供企業</th>
-          <th class="chevron-col"><span class="sr-only">詳細</span></th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <div class="site-card">
+      <table class="ranking-table" data-cat="text">
+        <thead>
+          <tr>
+            <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>モデル</th>
+            <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>提供企業</th>
+            <th class="chevron-col"><span class="sr-only">詳細</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </section>
   
   <section id="panel-code"
            role="tabpanel"
            aria-labelledby="tab-code"
            class="panel hidden">
-    <table class="ranking-table" data-cat="code">
-      <thead>
-        <tr>
-          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>モデル</th>
-          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>提供企業</th>
-          <th class="chevron-col"><span class="sr-only">詳細</span></th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <div class="site-card">
+      <table class="ranking-table" data-cat="code">
+        <thead>
+          <tr>
+            <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>モデル</th>
+            <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>提供企業</th>
+            <th class="chevron-col"><span class="sr-only">詳細</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </section>
   
   <section id="panel-vision"
            role="tabpanel"
            aria-labelledby="tab-vision"
            class="panel hidden">
-    <table class="ranking-table" data-cat="vision">
-      <thead>
-        <tr>
-          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>モデル</th>
-          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>提供企業</th>
-          <th class="chevron-col"><span class="sr-only">詳細</span></th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <div class="site-card">
+      <table class="ranking-table" data-cat="vision">
+        <thead>
+          <tr>
+            <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>モデル</th>
+            <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>提供企業</th>
+            <th class="chevron-col"><span class="sr-only">詳細</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </section>
   
   <section id="panel-text-to-image"
            role="tabpanel"
            aria-labelledby="tab-text-to-image"
            class="panel hidden">
-    <table class="ranking-table" data-cat="text-to-image">
-      <thead>
-        <tr>
-          <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>モデル</th>
-          <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
-          <th>提供企業</th>
-          <th class="chevron-col"><span class="sr-only">詳細</span></th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <div class="site-card">
+      <table class="ranking-table" data-cat="text-to-image">
+        <thead>
+          <tr>
+            <th><button class="sort-btn" data-sort="rank">順位<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>モデル</th>
+            <th><button class="sort-btn" data-sort="score">スコア<i class="arrow" aria-hidden="true"></i></button></th>
+            <th>提供企業</th>
+            <th class="chevron-col"><span class="sr-only">詳細</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
   </section>
   
 
