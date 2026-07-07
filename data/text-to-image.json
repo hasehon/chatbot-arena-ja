@@ -210,7 +210,7 @@
     "rank": 24,
     "model": "flux-2-dev",
     "vendor": "Black Forest Labs",
-    "license": "proprietary",
+    "license": "open",
     "score": 1148,
     "ci": 5,
     "votes": 60799
@@ -345,7 +345,7 @@
     "rank": 39,
     "model": "krea-2-turbo",
     "vendor": "Krea",
-    "license": "proprietary",
+    "license": "open",
     "score": 1112,
     "ci": 8,
     "votes": 6006
@@ -435,7 +435,7 @@
     "rank": 49,
     "model": "flux-2-klein-9b",
     "vendor": "Black Forest Labs",
-    "license": "proprietary",
+    "license": "open",
     "score": 1069,
     "ci": 3,
     "votes": 142248
@@ -615,7 +615,7 @@
     "rank": 69,
     "model": "flux-1-kontext-dev",
     "vendor": "Black Forest Labs",
-    "license": "proprietary",
+    "license": "open",
     "score": 940,
     "ci": 4,
     "votes": 215336
