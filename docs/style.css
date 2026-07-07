@@ -158,6 +158,17 @@ body {
   color: var(--ink-muted);
 }
 
+.model-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.provider-logo {
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
 .chevron-col { text-align: right; }
 
 .chevron-btn {
