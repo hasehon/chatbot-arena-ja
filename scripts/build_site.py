@@ -37,7 +37,7 @@ def normalize_row(raw):
     score = pick("score", "elo", "rating", default=0)
     ci_low = pick("ci_low", "ci_lower", default=None)
     ci_high = pick("ci_high", "ci_upper", default=None)
-    votes = pick("votes", "vote_count", "num_votes", default=0)
+    votes = pick("votes", "vote_count", "num_votes", default=None)
 
     if ci_low is not None and ci_high is not None:
         try:
