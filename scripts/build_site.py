@@ -35,14 +35,12 @@ def normalize_row(raw):
     model = pick("model", "name", "model_name", default="不明なモデル")
     provider = pick("vendor", "provider", "organization", "org", default="不明")
     score = pick("score", "elo", "rating", default=0)
-    ci_low = pick("ci_low", "ci_lower", default=None)
-    ci_high = pick("ci_high", "ci_upper", default=None)
+    ci = pick("ci", default=None)
     votes = pick("votes", "vote_count", "num_votes", default=None)
 
-    if ci_low is not None and ci_high is not None:
+    if ci is not None:
         try:
-            spread = max(abs(float(ci_low)), abs(float(ci_high)))
-            ci_text = f"±{spread:.0f}程度"
+            ci_text = f"±{abs(float(ci)):.0f}程度"
         except (TypeError, ValueError):
             ci_text = "情報なし"
     else:

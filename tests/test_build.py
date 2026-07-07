@@ -13,8 +13,7 @@ def test_normalize_row_with_full_data():
         "model": "GPT-5.2",
         "vendor": "OpenAI",
         "score": 1421,
-        "ci_low": -8,
-        "ci_high": 7,
+        "ci": 8,
         "votes": 142300,
     }
     row = build_site.normalize_row(raw)

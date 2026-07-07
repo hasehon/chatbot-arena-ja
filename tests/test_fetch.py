@@ -7,6 +7,40 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 import fetch_data  # noqa: E402
 
 
+class _FakeResponse:
+    def __init__(self, body):
+        self._body = body
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        return False
+
+    def read(self):
+        return self._body
+
+
+def test_fetch_category_unwraps_models_key(monkeypatch):
+    payload = {"meta": {"leaderboard": "text"}, "models": [{"rank": 1, "model": "X"}]}
+    body = json.dumps(payload).encode("utf-8")
+    monkeypatch.setattr(fetch_data.urllib.request, "urlopen", lambda *a, **k: _FakeResponse(body))
+
+    result = fetch_data.fetch_category("text")
+
+    assert result == [{"rank": 1, "model": "X"}]
+
+
+def test_fetch_category_passes_through_bare_list(monkeypatch):
+    payload = [{"rank": 1, "model": "Y"}]
+    body = json.dumps(payload).encode("utf-8")
+    monkeypatch.setattr(fetch_data.urllib.request, "urlopen", lambda *a, **k: _FakeResponse(body))
+
+    result = fetch_data.fetch_category("text")
+
+    assert result == payload
+
+
 def test_fetch_falls_back_to_cache_on_error(tmp_path, monkeypatch):
     monkeypatch.setattr(fetch_data, "DATA_DIR", str(tmp_path))
     monkeypatch.setattr(fetch_data, "CATEGORIES", ["text"])

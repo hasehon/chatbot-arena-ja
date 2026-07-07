@@ -21,7 +21,12 @@ def fetch_category(name):
     url = f"{API_BASE}?name={name}"
     req = urllib.request.Request(url, headers={"User-Agent": "chatbot-arena-ja/1.0"})
     with urllib.request.urlopen(req, timeout=15) as resp:
-        return json.load(resp)
+        payload = json.load(resp)
+    # レスポンスは {"meta": {...}, "models": [...]} の形。将来の変更に備え、
+    # 素の配列で返ってきた場合もそのまま扱えるようにしておく。
+    if isinstance(payload, dict):
+        return payload.get("models", [])
+    return payload
 
 
 def load_cache(name):
