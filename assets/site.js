@@ -14,6 +14,31 @@
   var searchInput = document.getElementById("search");
   var companySelect = document.getElementById("company-filter");
 
+  var PROVIDER_DOMAINS = {
+    "openai": "openai.com",
+    "anthropic": "anthropic.com",
+    "google": "google.com",
+    "xai": "x.ai",
+    "deepseek": "deepseek.com",
+    "alibaba": "alibaba.com",
+    "meta": "meta.com",
+    "mistral": "mistral.ai",
+    "mistral ai": "mistral.ai",
+    "cohere": "cohere.com",
+    "nvidia": "nvidia.com",
+    "midjourney": "midjourney.com",
+    "black forest labs": "blackforestlabs.ai",
+    "stability ai": "stability.ai",
+    "ideogram": "ideogram.ai",
+    "reve": "reve.com"
+  };
+
+  function providerLogoUrl(provider) {
+    var domain = PROVIDER_DOMAINS[String(provider).toLowerCase()];
+    if (!domain) return null;
+    return "https://www.google.com/s2/favicons?domain=" + domain + "&sz=32";
+  }
+
   function escapeText(s) {
     var div = document.createElement("div");
     div.textContent = String(s);
@@ -64,11 +89,16 @@
     rows.forEach(function (r, idx) {
       var detailId = "detail-" + state.cat + "-" + idx;
 
+      var logoUrl = providerLogoUrl(r.provider);
+      var logoHtml = logoUrl
+        ? '<img src="' + logoUrl + '" alt="" width="16" height="16" loading="lazy" class="provider-logo" onerror="this.remove()">'
+        : "";
+
       var tr = document.createElement("tr");
       tr.className = "row";
       tr.innerHTML =
         '<td data-label="順位">' + r.rank + "</td>" +
-        '<td data-label="モデル">' + escapeText(r.model) + "</td>" +
+        '<td data-label="モデル"><span class="model-cell">' + logoHtml + "<span>" + escapeText(r.model) + "</span></span></td>" +
         '<td data-label="スコア">' + r.score + "</td>" +
         '<td data-label="提供企業"><span class="badge">' + escapeText(r.provider) + "</span></td>" +
         '<td class="chevron-col"><button class="chevron-btn" type="button" aria-expanded="false" aria-controls="' +
