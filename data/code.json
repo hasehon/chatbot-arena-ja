@@ -46,7 +46,7 @@
   },
   {
     "rank": 6,
-    "model": "claude-sonnet-5-thinking",
+    "model": "claude-sonnet-5-high",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1551,
