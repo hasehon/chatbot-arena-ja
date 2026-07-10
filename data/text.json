@@ -146,7 +146,7 @@
   {
     "rank": 17,
     "model": "grok-4.20-beta-0309-reasoning",
-    "vendor": "xAI",
+    "vendor": "SpaceXAI",
     "license": "proprietary",
     "score": 1475,
     "ci": 4,
@@ -155,7 +155,7 @@
   {
     "rank": 18,
     "model": "grok-4.20-beta1",
-    "vendor": "xAI",
+    "vendor": "SpaceXAI",
     "license": "proprietary",
     "score": 1474,
     "ci": 5,
@@ -178,95 +178,5 @@
     "score": 1473,
     "ci": 4,
     "votes": 37085
-  },
-  {
-    "rank": 21,
-    "model": "gpt-5.5-instant",
-    "vendor": "OpenAI",
-    "license": "proprietary",
-    "score": 1473,
-    "ci": 5,
-    "votes": 26172
-  },
-  {
-    "rank": 22,
-    "model": "glm-5.1",
-    "vendor": "Z.ai",
-    "license": "open",
-    "score": 1472,
-    "ci": 5,
-    "votes": 22689
-  },
-  {
-    "rank": 23,
-    "model": "claude-sonnet-4-6",
-    "vendor": "Anthropic",
-    "license": "proprietary",
-    "score": 1472,
-    "ci": 4,
-    "votes": 48706
-  },
-  {
-    "rank": 24,
-    "model": "grok-4.20-multi-agent-beta-0309",
-    "vendor": "xAI",
-    "license": "proprietary",
-    "score": 1470,
-    "ci": 4,
-    "votes": 50647
-  },
-  {
-    "rank": 25,
-    "model": "claude-opus-4-5-20251101",
-    "vendor": "Anthropic",
-    "license": "proprietary",
-    "score": 1469,
-    "ci": 3,
-    "votes": 71135
-  },
-  {
-    "rank": 26,
-    "model": "glm-5.2 (max)",
-    "vendor": "Z.ai",
-    "license": "open",
-    "score": 1469,
-    "ci": 7,
-    "votes": 9338
-  },
-  {
-    "rank": 27,
-    "model": "ernie-5.1",
-    "vendor": "Baidu",
-    "license": "proprietary",
-    "score": 1468,
-    "ci": 5,
-    "votes": 32742
-  },
-  {
-    "rank": 28,
-    "model": "gpt-5.4",
-    "vendor": "OpenAI",
-    "license": "proprietary",
-    "score": 1467,
-    "ci": 4,
-    "votes": 53056
-  },
-  {
-    "rank": 29,
-    "model": "mimo-v2.5-pro",
-    "vendor": "Xiaomi",
-    "license": "open",
-    "score": 1466,
-    "ci": 5,
-    "votes": 34468
-  },
-  {
-    "rank": 30,
-    "model": "grok-4.1-thinking",
-    "vendor": "xAI",
-    "license": "proprietary",
-    "score": 1466,
-    "ci": 3,
-    "votes": 65565
   }
 ]
