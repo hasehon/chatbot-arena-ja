@@ -228,7 +228,7 @@
     "rank": 26,
     "model": "hunyuan-image-3.0",
     "vendor": "Tencent",
-    "license": "proprietary",
+    "license": null,
     "score": 1151,
     "ci": 3,
     "votes": 172769

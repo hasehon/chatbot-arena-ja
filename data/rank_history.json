@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-07-14",
+  "baseline_date": "2026-07-15",
   "baseline": {
     "text": {
       "claude-fable-5": 1,
@@ -9,19 +9,9 @@
       "claude-opus-4-7": 5,
       "muse-spark-1.1": 6,
       "muse-spark": 7,
-      "gpt-5.6-sol-xhigh": 8,
+      "gemini-3.1-pro-preview": 8,
       "gemini-3-pro": 9,
-      "gemini-3.1-pro-preview": 10,
-      "claude-opus-4-8-thinking": 11,
-      "gpt-5.5-high": 12,
-      "gpt-5.4-high": 13,
-      "gemini-3.5-flash-high": 14,
-      "gemini-3.5-flash-medium": 15,
-      "gpt-5.2-chat-latest-20260210": 16,
-      "qwen3.7-max-preview": 17,
-      "claude-opus-4-8": 18,
-      "grok-4.20-beta1": 19,
-      "gpt-5.5": 20
+      "gpt-5.6-sol-xhigh": 10
     },
     "code": {
       "gpt-5.6-sol-xhigh (codex-harness)": 1,
@@ -154,7 +144,7 @@
       "bagel": 74
     }
   },
-  "latest_date": "2026-07-15",
+  "latest_date": "2026-07-16",
   "latest": {
     "text": {
       "claude-fable-5": 1,
@@ -166,7 +156,17 @@
       "muse-spark": 7,
       "gemini-3.1-pro-preview": 8,
       "gemini-3-pro": 9,
-      "gpt-5.6-sol-xhigh": 10
+      "gpt-5.6-sol-xhigh": 10,
+      "claude-opus-4-8-thinking": 11,
+      "gpt-5.5-high": 12,
+      "gpt-5.4-high": 13,
+      "gemini-3.5-flash-high": 14,
+      "gpt-5.2-chat-latest-20260210": 15,
+      "qwen3.7-max-preview": 16,
+      "gemini-3.5-flash-medium": 17,
+      "claude-opus-4-8": 18,
+      "grok-4.20-beta1": 19,
+      "gpt-5.5": 20
     },
     "code": {
       "gpt-5.6-sol-xhigh (codex-harness)": 1,
@@ -220,7 +220,27 @@
       "gpt-5.4-mini-high": 27,
       "grok-4.20-beta-0309-reasoning": 28,
       "grok-4.20-multi-agent-beta-0309": 29,
-      "qwen3.5-397b-a17b": 30
+      "qwen3.5-397b-a17b": 30,
+      "gpt-5.1-high": 31,
+      "grok-4.3": 32,
+      "kimi-k2.5-thinking": 33,
+      "gemini-2.5-pro": 34,
+      "gpt-5.2-high": 35,
+      "minimax-m3": 36,
+      "chatgpt-4o-latest-20250326": 37,
+      "mimo-v2.5": 38,
+      "gemma-4-26b-a4b": 39,
+      "gpt-5.1": 40,
+      "kimi-k2.5-instant": 41,
+      "gemini-3.1-flash-lite-preview": 42,
+      "glm-5v-turbo": 43,
+      "gpt-5.2": 44,
+      "qwen3.5-122b-a10b": 45,
+      "gpt-4.5-preview-2025-02-27": 46,
+      "gpt-5-chat": 47,
+      "gemini-2.5-flash-preview-09-2025": 48,
+      "qwen3.5-27b": 49,
+      "mimo-v2-omni": 50
     },
     "text-to-image": {
       "gpt-image-2 (medium)": 1,
