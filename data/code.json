@@ -163,20 +163,20 @@
   },
   {
     "rank": 19,
+    "model": "gemini-3.5-flash",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1504,
+    "ci": 13,
+    "votes": 2293
+  },
+  {
+    "rank": 20,
     "model": "gpt-5.5-xhigh (codex-harness)",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1504,
     "ci": 7,
     "votes": 9169
-  },
-  {
-    "rank": 20,
-    "model": "minimax-m3",
-    "vendor": "MiniMax",
-    "license": "open",
-    "score": 1493,
-    "ci": 8,
-    "votes": 6302
   }
 ]

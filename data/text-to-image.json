@@ -228,7 +228,7 @@
     "rank": 26,
     "model": "hunyuan-image-3.0",
     "vendor": "Tencent",
-    "license": null,
+    "license": "open",
     "score": 1151,
     "ci": 3,
     "votes": 172769
@@ -283,7 +283,7 @@
     "model": "seedream-5.0-lite",
     "vendor": "Bytedance",
     "license": "proprietary",
-    "score": 1133,
+    "score": 1132,
     "ci": 4,
     "votes": 87149
   },
@@ -542,7 +542,7 @@
   {
     "rank": 61,
     "model": "p-image",
-    "vendor": "Pruna",
+    "vendor": null,
     "license": "proprietary",
     "score": 1034,
     "ci": 4,
@@ -650,7 +650,7 @@
   {
     "rank": 73,
     "model": "stable-diffusion-v35-large",
-    "vendor": "Stability AI",
+    "vendor": null,
     "license": "open",
     "score": 938,
     "ci": 4,
