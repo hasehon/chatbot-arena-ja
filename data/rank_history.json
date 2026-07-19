@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-07-17",
+  "baseline_date": "2026-07-18",
   "baseline": {
     "text": {
       "claude-fable-5": 1,
@@ -11,7 +11,17 @@
       "muse-spark": 7,
       "gemini-3-pro": 8,
       "kimi-k3": 9,
-      "gpt-5.6-sol-xhigh": 10
+      "gpt-5.6-sol-xhigh": 10,
+      "gemini-3.1-pro-preview": 11,
+      "claude-opus-4-8-thinking": 12,
+      "gpt-5.5-high": 13,
+      "gpt-5.4-high": 14,
+      "gemini-3.5-flash-high": 15,
+      "gpt-5.2-chat-latest-20260210": 16,
+      "claude-opus-4-8": 17,
+      "qwen3.7-max-preview": 18,
+      "gpt-5.5": 19,
+      "grok-4.20-beta1": 20
     },
     "code": {
       "kimi-k3": 1,
@@ -32,8 +42,8 @@
       "claude-sonnet-4-6": 16,
       "qwen3.7-max-20260517": 17,
       "kimi-k2.6": 18,
-      "gpt-5.5-xhigh (codex-harness)": 19,
-      "minimax-m3": 20
+      "gemini-3.5-flash": 19,
+      "gpt-5.5-xhigh (codex-harness)": 20
     },
     "vision": {
       "claude-fable-5": 1,
@@ -164,7 +174,7 @@
       "bagel": 74
     }
   },
-  "latest_date": "2026-07-18",
+  "latest_date": "2026-07-19",
   "latest": {
     "text": {
       "claude-fable-5": 1,
@@ -176,17 +186,7 @@
       "muse-spark": 7,
       "gemini-3-pro": 8,
       "kimi-k3": 9,
-      "gpt-5.6-sol-xhigh": 10,
-      "gemini-3.1-pro-preview": 11,
-      "claude-opus-4-8-thinking": 12,
-      "gpt-5.5-high": 13,
-      "gpt-5.4-high": 14,
-      "gemini-3.5-flash-high": 15,
-      "gpt-5.2-chat-latest-20260210": 16,
-      "claude-opus-4-8": 17,
-      "qwen3.7-max-preview": 18,
-      "gpt-5.5": 19,
-      "grok-4.20-beta1": 20
+      "gpt-5.6-sol-xhigh": 10
     },
     "code": {
       "kimi-k3": 1,
