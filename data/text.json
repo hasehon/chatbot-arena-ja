@@ -6,7 +6,7 @@
     "license": "proprietary",
     "score": 1508,
     "ci": 6,
-    "votes": 15817
+    "votes": 16056
   },
   {
     "rank": 2,
@@ -15,7 +15,7 @@
     "license": "proprietary",
     "score": 1505,
     "ci": 4,
-    "votes": 64435
+    "votes": 64805
   },
   {
     "rank": 3,
@@ -24,25 +24,25 @@
     "license": "proprietary",
     "score": 1502,
     "ci": 4,
-    "votes": 51943
+    "votes": 52303
   },
   {
     "rank": 4,
     "model": "claude-opus-4-6",
     "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1498,
+    "score": 1497,
     "ci": 4,
-    "votes": 68145
+    "votes": 68516
   },
   {
     "rank": 5,
-    "model": "claude-opus-5-high",
+    "model": "claude-opus-5-max",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1495,
-    "ci": 8,
-    "votes": 5417
+    "ci": 12,
+    "votes": 2386
   },
   {
     "rank": 6,
@@ -51,37 +51,55 @@
     "license": "proprietary",
     "score": 1493,
     "ci": 4,
-    "votes": 53093
+    "votes": 53428
   },
   {
     "rank": 7,
-    "model": "muse-spark-1.1",
-    "vendor": "Meta",
+    "model": "claude-opus-5-high",
+    "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1493,
-    "ci": 7,
-    "votes": 9573
+    "ci": 8,
+    "votes": 6159
   },
   {
     "rank": 8,
+    "model": "muse-spark-1.1",
+    "vendor": "Meta",
+    "license": "proprietary",
+    "score": 1491,
+    "ci": 7,
+    "votes": 9941
+  },
+  {
+    "rank": 9,
     "model": "muse-spark",
     "vendor": "Meta",
     "license": "proprietary",
     "score": 1488,
     "ci": 6,
-    "votes": 13497
+    "votes": 13504
   },
   {
-    "rank": 9,
+    "rank": 10,
     "model": "gemini-3.1-pro-preview",
     "vendor": "Google",
     "license": "proprietary",
     "score": 1486,
     "ci": 3,
-    "votes": 86298
+    "votes": 86683
   },
   {
-    "rank": 10,
+    "rank": 11,
+    "model": "kimi-k3-max",
+    "vendor": "Moonshot",
+    "license": null,
+    "score": 1486,
+    "ci": 10,
+    "votes": 3559
+  },
+  {
+    "rank": 12,
     "model": "gemini-3-pro",
     "vendor": "Google",
     "license": "proprietary",
@@ -90,93 +108,75 @@
     "votes": 41242
   },
   {
-    "rank": 11,
-    "model": "kimi-k3",
-    "vendor": "Moonshot",
-    "license": "proprietary",
-    "score": 1485,
-    "ci": 10,
-    "votes": 3569
-  },
-  {
-    "rank": 12,
+    "rank": 13,
     "model": "gpt-5.6-sol-xhigh",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1485,
     "ci": 7,
-    "votes": 7972
+    "votes": 8359
   },
   {
-    "rank": 13,
+    "rank": 14,
     "model": "claude-opus-4-8-thinking",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1484,
     "ci": 5,
-    "votes": 32416
+    "votes": 32817
   },
   {
-    "rank": 14,
+    "rank": 15,
     "model": "gemini-3.6-flash",
     "vendor": "Google",
     "license": "proprietary",
     "score": 1482,
     "ci": 8,
-    "votes": 5642
+    "votes": 6065
   },
   {
-    "rank": 15,
+    "rank": 16,
     "model": "gpt-5.5-high",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1482,
     "ci": 4,
-    "votes": 47183
+    "votes": 47572
   },
   {
-    "rank": 16,
+    "rank": 17,
     "model": "gpt-5.4-high",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1477,
     "ci": 4,
-    "votes": 60260
+    "votes": 60292
   },
   {
-    "rank": 17,
+    "rank": 18,
     "model": "gemini-3.5-flash-high",
     "vendor": "Google",
     "license": "proprietary",
     "score": 1476,
     "ci": 7,
-    "votes": 10016
+    "votes": 10011
   },
   {
-    "rank": 18,
+    "rank": 19,
     "model": "gpt-5.2-chat-latest-20260210",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1476,
     "ci": 4,
-    "votes": 34074
+    "votes": 34060
   },
   {
-    "rank": 19,
+    "rank": 20,
     "model": "gpt-5.5",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1476,
     "ci": 4,
-    "votes": 48451
-  },
-  {
-    "rank": 20,
-    "model": "qwen3.7-max-preview",
-    "vendor": "Alibaba",
-    "license": "proprietary",
-    "score": 1475,
-    "ci": 10,
-    "votes": 3698
+    "votes": 48792
   }
 ]
