@@ -145,6 +145,15 @@
   },
   {
     "rank": 17,
+    "model": "gpt-5.6-sol-xhigh",
+    "vendor": "OpenAI",
+    "license": "proprietary",
+    "score": 1279,
+    "ci": 13,
+    "votes": 2444
+  },
+  {
+    "rank": 18,
     "model": "claude-opus-4-8",
     "vendor": "Anthropic",
     "license": "proprietary",
@@ -153,7 +162,7 @@
     "votes": 10626
   },
   {
-    "rank": 18,
+    "rank": 19,
     "model": "gpt-5.4",
     "vendor": "OpenAI",
     "license": "proprietary",
@@ -162,7 +171,7 @@
     "votes": 19583
   },
   {
-    "rank": 19,
+    "rank": 20,
     "model": "gpt-5.2-chat-latest-20260210",
     "vendor": "OpenAI",
     "license": "proprietary",
@@ -171,12 +180,93 @@
     "votes": 15403
   },
   {
-    "rank": 20,
+    "rank": 21,
     "model": "gemini-3.1-pro-preview",
     "vendor": "Google",
     "license": "proprietary",
     "score": 1278,
     "ci": 6,
     "votes": 35988
+  },
+  {
+    "rank": 22,
+    "model": "gpt-5.5-instant",
+    "vendor": "OpenAI",
+    "license": "proprietary",
+    "score": 1277,
+    "ci": 9,
+    "votes": 7234
+  },
+  {
+    "rank": 23,
+    "model": "gemini-3.5-flash-high",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1277,
+    "ci": 12,
+    "votes": 2953
+  },
+  {
+    "rank": 24,
+    "model": "claude-sonnet-4-6",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1275,
+    "ci": 7,
+    "votes": 24141
+  },
+  {
+    "rank": 25,
+    "model": "gpt-5.6-terra-xhigh",
+    "vendor": "OpenAI",
+    "license": "proprietary",
+    "score": 1273,
+    "ci": 14,
+    "votes": 2285
+  },
+  {
+    "rank": 26,
+    "model": "claude-sonnet-5-high",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1271,
+    "ci": 10,
+    "votes": 5250
+  },
+  {
+    "rank": 27,
+    "model": "gemini-3-flash",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1271,
+    "ci": 6,
+    "votes": 34781
+  },
+  {
+    "rank": 28,
+    "model": "kimi-k2.6",
+    "vendor": "Moonshot",
+    "license": "open",
+    "score": 1264,
+    "ci": 7,
+    "votes": 15417
+  },
+  {
+    "rank": 29,
+    "model": "qwen3.7-plus",
+    "vendor": "Alibaba",
+    "license": "proprietary",
+    "score": 1262,
+    "ci": 9,
+    "votes": 6457
+  },
+  {
+    "rank": 30,
+    "model": "gemini-3.5-flash-lite",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1260,
+    "ci": 37,
+    "votes": 247
   }
 ]
