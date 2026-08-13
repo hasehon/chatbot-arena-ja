@@ -19,7 +19,7 @@
   },
   {
     "rank": 3,
-    "model": "claude-opus-4-7-thinking",
+    "model": "claude-opus-4-7-high",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1301,
@@ -28,7 +28,7 @@
   },
   {
     "rank": 4,
-    "model": "claude-opus-4-6-thinking",
+    "model": "claude-opus-4-6-high",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1300,
@@ -55,7 +55,7 @@
   },
   {
     "rank": 7,
-    "model": "gemini-3.6-flash",
+    "model": "gemini-3.6-flash-high",
     "vendor": "Google",
     "license": "proprietary",
     "score": 1295,
@@ -118,7 +118,7 @@
   },
   {
     "rank": 14,
-    "model": "claude-opus-4-8-thinking",
+    "model": "claude-opus-4-8-high",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1284,
