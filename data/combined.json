@@ -195,7 +195,7 @@
       "rank": 2,
       "model": "kimi-k3-max",
       "vendor": "Moonshot",
-      "license": "open",
+      "license": "proprietary",
       "score": 1674,
       "ci": 11,
       "votes": 4546
@@ -1072,7 +1072,7 @@
       "rank": 29,
       "model": "hunyuan-image-3.0",
       "vendor": "Tencent",
-      "license": "open",
+      "license": null,
       "score": 1151,
       "ci": 3,
       "votes": 173345
