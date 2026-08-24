@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-08-22",
+  "baseline_date": "2026-08-23",
   "baseline": {
     "text": {
       "claude-fable-5": 1,
@@ -115,7 +115,17 @@
       "qwen3.8-27b": 37,
       "gpt-5.6-luna-xhigh": 38,
       "gpt-5.4-mini-high": 39,
-      "grok-4.20-multi-agent-beta-0309": 40
+      "grok-4.20-multi-agent-beta-0309": 40,
+      "gpt-5.1-high": 41,
+      "kimi-k2.5-thinking": 42,
+      "qwen3.5-397b-a17b": 43,
+      "gemini-2.5-pro": 44,
+      "gpt-5.2-high": 45,
+      "gemma-4-26b-a4b": 46,
+      "grok-4.3": 47,
+      "chatgpt-4o-latest-20250326": 48,
+      "gpt-5.1": 49,
+      "kimi-k2.5-instant": 50
     },
     "text-to-image": {
       "gpt-image-2 (medium)": 1,
@@ -196,7 +206,7 @@
       "bagel": 76
     }
   },
-  "latest_date": "2026-08-23",
+  "latest_date": "2026-08-24",
   "latest": {
     "text": {
       "claude-fable-5": 1,
