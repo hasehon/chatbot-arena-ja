@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-08-23",
+  "baseline_date": "2026-08-24",
   "baseline": {
     "text": {
       "claude-fable-5": 1,
@@ -206,7 +206,7 @@
       "bagel": 76
     }
   },
-  "latest_date": "2026-08-24",
+  "latest_date": "2026-08-25",
   "latest": {
     "text": {
       "claude-fable-5": 1,
