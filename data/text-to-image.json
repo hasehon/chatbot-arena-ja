@@ -255,7 +255,7 @@
     "rank": 29,
     "model": "hunyuan-image-3.0",
     "vendor": "Tencent",
-    "license": null,
+    "license": "open",
     "score": 1151,
     "ci": 3,
     "votes": 173129
@@ -291,7 +291,7 @@
     "rank": 33,
     "model": "flux-2-dev",
     "vendor": "Black Forest Labs",
-    "license": null,
+    "license": "open",
     "score": 1146,
     "ci": 4,
     "votes": 73979
@@ -417,7 +417,7 @@
     "rank": 47,
     "model": "krea-2-turbo",
     "vendor": "Krea",
-    "license": null,
+    "license": "open",
     "score": 1110,
     "ci": 5,
     "votes": 31944
@@ -498,7 +498,7 @@
     "rank": 56,
     "model": "flux-2-klein-9b",
     "vendor": "Black Forest Labs",
-    "license": null,
+    "license": "open",
     "score": 1070,
     "ci": 3,
     "votes": 142658
@@ -660,7 +660,7 @@
     "rank": 74,
     "model": "flux-1-kontext-dev",
     "vendor": "Black Forest Labs",
-    "license": null,
+    "license": "open",
     "score": 940,
     "ci": 4,
     "votes": 215347
