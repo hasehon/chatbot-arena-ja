@@ -222,7 +222,7 @@
       "rank": 5,
       "model": "kimi-k3-max",
       "vendor": "Moonshot",
-      "license": null,
+      "license": "proprietary",
       "score": 1674,
       "ci": 11,
       "votes": 4547
@@ -258,7 +258,7 @@
       "rank": 9,
       "model": "qwen3.8-flash-next",
       "vendor": "Alibaba",
-      "license": null,
+      "license": "open",
       "score": 1635,
       "ci": 13,
       "votes": 2779
