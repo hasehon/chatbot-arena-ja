@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-09-15",
+  "baseline_date": "2026-09-16",
   "baseline": {
     "text": {
       "claude-fable-5": 1,
@@ -148,7 +148,7 @@
       "bagel": 78
     }
   },
-  "latest_date": "2026-09-16",
+  "latest_date": "2026-09-17",
   "latest": {
     "text": {
       "claude-fable-5": 1,
@@ -192,7 +192,37 @@
       "glm-5.3-flash": 17,
       "qwen3.8-27b": 18,
       "glm-5.2-max": 19,
-      "gemini-3.7-flash-high": 20
+      "gemini-3.7-flash-high": 20,
+      "deepseek-v4-pro-high-20260813": 21,
+      "deepseek-v4-flash-high": 22,
+      "gemini-3.8-flash-high": 23,
+      "claude-opus-4-8-high": 24,
+      "claude-opus-4-7": 25,
+      "claude-opus-4-7-high": 26,
+      "grok-4.5": 27,
+      "claude-opus-4-6-high": 28,
+      "muse-spark-1.1": 29,
+      "claude-opus-4-8": 30,
+      "claude-opus-4-6": 31,
+      "gemini-3.6-flash-high": 32,
+      "claude-sonnet-5-high": 33,
+      "muse-spark-1.2 (xHigh)": 34,
+      "gpt-5.6-terra-xhigh (codex-harness)": 35,
+      "claude-sonnet-4-6": 36,
+      "gpt-5.6-luna-xhigh (codex-harness)": 37,
+      "seed-2.1-pro-preview": 38,
+      "qwen3.7-max-20260517": 39,
+      "hy3": 40,
+      "gpt-5.5-xhigh (codex-harness)": 41,
+      "kimi-k2.6": 42,
+      "glm-5.1": 43,
+      "gemini-3.5-flash-high": 44,
+      "claude-opus-4-5-20251101-high-32k": 45,
+      "gemini-3.5-flash-medium": 46,
+      "gpt-5.5-high (codex-harness)": 47,
+      "minimax-m3": 48,
+      "qwen3.6-max-preview": 49,
+      "mimo-v2.5-pro": 50
     },
     "vision": {
       "claude-fable-5": 1,
