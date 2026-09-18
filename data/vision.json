@@ -1,7 +1,7 @@
 [
   {
     "rank": 1,
-    "model": "claude-fable-5",
+    "model": "claude-fable-5-high",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1310,
