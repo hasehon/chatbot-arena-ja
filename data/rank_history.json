@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-09-20",
+  "baseline_date": "2026-09-21",
   "baseline": {
     "text": {
       "claude-fable-5-high": 1,
@@ -11,17 +11,7 @@
       "claude-opus-4-7": 7,
       "muse-spark-1.3-max": 8,
       "gemini-3.8-flash-high": 9,
-      "claude-opus-5-high": 10,
-      "muse-spark-1.1": 11,
-      "gemini-3.7-flash-high": 12,
-      "muse-spark": 13,
-      "claude-opus-5-max": 14,
-      "gemini-3.1-pro-preview": 15,
-      "gemini-3-pro": 16,
-      "kimi-k3-max": 17,
-      "gpt-5.6-sol-xhigh": 18,
-      "glm-5.3-max": 19,
-      "gpt-5.5-high": 20
+      "claude-opus-5-high": 10
     },
     "code": {
       "gpt-6-astra-max": 1,
@@ -65,7 +55,17 @@
       "gemini-3.5-flash-high": 17,
       "claude-opus-4-8-high": 18,
       "gpt-5.5-high": 19,
-      "gemini-3.5-flash-medium": 20
+      "gemini-3.5-flash-medium": 20,
+      "gemini-3.6-flash-high": 21,
+      "muse-spark-1.1": 22,
+      "gpt-5.4": 23,
+      "grok-4.5": 24,
+      "claude-opus-4-8": 25,
+      "gemini-3.1-pro-preview": 26,
+      "gpt-5.2-chat-latest-20260210": 27,
+      "gpt-5.5-instant": 28,
+      "claude-sonnet-4-6": 29,
+      "glm-5.3-flash": 30
     },
     "text-to-image": {
       "gpt-image-2.5-sunburst": 1,
@@ -148,7 +148,7 @@
       "bagel": 78
     }
   },
-  "latest_date": "2026-09-21",
+  "latest_date": "2026-09-22",
   "latest": {
     "text": {
       "claude-fable-5-high": 1,
