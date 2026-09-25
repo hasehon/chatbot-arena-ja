@@ -1,48 +1,48 @@
 [
   {
     "rank": 1,
-    "model": "gpt-6-astra-max",
-    "vendor": "OpenAI",
+    "model": "claude-opus-5.5-max",
+    "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1800,
-    "ci": 16,
-    "votes": 2281
+    "score": 1818,
+    "ci": 21,
+    "votes": 1219
   },
   {
     "rank": 2,
-    "model": "claude-fable-5.1-max",
-    "vendor": "Anthropic",
+    "model": "gpt-6-astra-max",
+    "vendor": "OpenAI",
     "license": "proprietary",
-    "score": 1758,
-    "ci": 14,
-    "votes": 3036
+    "score": 1792,
+    "ci": 12,
+    "votes": 4325
   },
   {
     "rank": 3,
-    "model": "claude-opus-5-max",
+    "model": "claude-fable-5.1-max",
     "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1687,
-    "ci": 7,
-    "votes": 12087
+    "score": 1755,
+    "ci": 11,
+    "votes": 4916
   },
   {
     "rank": 4,
-    "model": "qwen3.8-max-0902",
-    "vendor": "Alibaba",
+    "model": "claude-opus-5-max",
+    "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1681,
-    "ci": 15,
-    "votes": 2262
+    "score": 1692,
+    "ci": 7,
+    "votes": 14351
   },
   {
     "rank": 5,
-    "model": "kimi-k3-max",
-    "vendor": "Moonshot",
-    "license": null,
-    "score": 1674,
-    "ci": 11,
-    "votes": 4547
+    "model": "gpt-6-sol-max",
+    "vendor": "OpenAI",
+    "license": "proprietary",
+    "score": 1686,
+    "ci": 17,
+    "votes": 1521
   },
   {
     "rank": 6,
@@ -51,132 +51,132 @@
     "license": "proprietary",
     "score": 1671,
     "ci": 12,
-    "votes": 3221
+    "votes": 3218
   },
   {
     "rank": 7,
     "model": "claude-opus-5-high",
     "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1660,
-    "ci": 7,
-    "votes": 12566
+    "score": 1662,
+    "ci": 6,
+    "votes": 17134
   },
   {
     "rank": 8,
-    "model": "muse-spark-1.3-max",
-    "vendor": "Meta",
+    "model": "qwen3.8-max-0902",
+    "vendor": "Alibaba",
     "license": "proprietary",
-    "score": 1652,
-    "ci": 12,
-    "votes": 2972
+    "score": 1661,
+    "ci": 9,
+    "votes": 5502
   },
   {
     "rank": 9,
-    "model": "qwen3.8-flash-next",
-    "vendor": "Alibaba",
+    "model": "kimi-k3-max",
+    "vendor": "Moonshot",
     "license": null,
-    "score": 1635,
-    "ci": 13,
-    "votes": 2779
+    "score": 1660,
+    "ci": 7,
+    "votes": 13252
   },
   {
     "rank": 10,
-    "model": "claude-fable-5-high",
-    "vendor": "Anthropic",
+    "model": "muse-spark-1.3-max",
+    "vendor": "Meta",
     "license": "proprietary",
-    "score": 1628,
-    "ci": 7,
-    "votes": 10081
+    "score": 1658,
+    "ci": 10,
+    "votes": 5342
   },
   {
     "rank": 11,
-    "model": "hy4-preview",
-    "vendor": "Tencent",
+    "model": "qwen3.8-flash-next",
+    "vendor": "Alibaba",
     "license": "open",
-    "score": 1624,
-    "ci": 13,
-    "votes": 2321
+    "score": 1636,
+    "ci": 10,
+    "votes": 4429
   },
   {
     "rank": 12,
-    "model": "muse-spark-1.3 (xHigh)",
-    "vendor": "Meta",
+    "model": "grok-4.7-xhigh",
+    "vendor": "SpaceXAI",
     "license": "proprietary",
-    "score": 1623,
-    "ci": 14,
-    "votes": 2123
+    "score": 1632,
+    "ci": 16,
+    "votes": 1650
   },
   {
     "rank": 13,
-    "model": "grok-4.6-high",
-    "vendor": "SpaceXAI",
-    "license": "proprietary",
-    "score": 1618,
+    "model": "hy4-preview",
+    "vendor": "Tencent",
+    "license": "open",
+    "score": 1631,
     "ci": 10,
-    "votes": 4282
+    "votes": 4443
   },
   {
     "rank": 14,
+    "model": "claude-fable-5-high",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1627,
+    "ci": 7,
+    "votes": 11933
+  },
+  {
+    "rank": 15,
+    "model": "muse-spark-1.3 (xHigh)",
+    "vendor": "Meta",
+    "license": "proprietary",
+    "score": 1626,
+    "ci": 10,
+    "votes": 4391
+  },
+  {
+    "rank": 16,
+    "model": "grok-4.6-high",
+    "vendor": "SpaceXAI",
+    "license": "proprietary",
+    "score": 1624,
+    "ci": 9,
+    "votes": 6360
+  },
+  {
+    "rank": 17,
+    "model": "glm-5.3-max",
+    "vendor": "Z.ai",
+    "license": "open",
+    "score": 1622,
+    "ci": 9,
+    "votes": 5801
+  },
+  {
+    "rank": 18,
+    "model": "deepseek-v4.1-flash-max",
+    "vendor": "DeepSeek",
+    "license": "open",
+    "score": 1620,
+    "ci": 11,
+    "votes": 3265
+  },
+  {
+    "rank": 19,
+    "model": "mimo-v2.6-pro",
+    "vendor": "Xiaomi",
+    "license": "open",
+    "score": 1619,
+    "ci": 14,
+    "votes": 2156
+  },
+  {
+    "rank": 20,
     "model": "gpt-5.6-sol-xhigh (codex-harness)",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1617,
-    "ci": 7,
-    "votes": 11916
-  },
-  {
-    "rank": 15,
-    "model": "glm-5.3-max",
-    "vendor": "Z.ai",
-    "license": "open",
-    "score": 1614,
-    "ci": 11,
-    "votes": 3725
-  },
-  {
-    "rank": 16,
-    "model": "deepseek-v4.1-flash-max",
-    "vendor": "DeepSeek",
-    "license": "open",
-    "score": 1614,
-    "ci": 17,
-    "votes": 1361
-  },
-  {
-    "rank": 17,
-    "model": "glm-5.3-flash",
-    "vendor": "Z.ai",
-    "license": "open",
-    "score": 1607,
-    "ci": 12,
-    "votes": 2925
-  },
-  {
-    "rank": 18,
-    "model": "qwen3.8-27b",
-    "vendor": "Alibaba",
-    "license": "open",
-    "score": 1593,
-    "ci": 9,
-    "votes": 4913
-  },
-  {
-    "rank": 19,
-    "model": "glm-5.2-max",
-    "vendor": "Z.ai",
-    "license": "open",
-    "score": 1592,
-    "ci": 7,
-    "votes": 10516
-  },
-  {
-    "rank": 20,
-    "model": "gemini-3.7-flash-high",
-    "vendor": "Google",
-    "license": "proprietary",
-    "score": 1587,
-    "ci": 12,
-    "votes": 3007
+    "ci": 6,
+    "votes": 14393
   }
 ]
