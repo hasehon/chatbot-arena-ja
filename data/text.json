@@ -1,12 +1,12 @@
 [
   {
     "rank": 1,
-    "model": "claude-fable-5-high",
+    "model": "claude-opus-5.5-high",
     "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1506,
-    "ci": 5,
-    "votes": 30057
+    "score": 1509,
+    "ci": 12,
+    "votes": 2307
   },
   {
     "rank": 2,
@@ -14,169 +14,259 @@
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1505,
-    "ci": 4,
-    "votes": 71993
+    "ci": 3,
+    "votes": 76518
   },
   {
     "rank": 3,
+    "model": "claude-fable-5-high",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1504,
+    "ci": 4,
+    "votes": 36462
+  },
+  {
+    "rank": 4,
     "model": "claude-opus-4-7-high",
     "vendor": "Anthropic",
     "license": "proprietary",
     "score": 1502,
     "ci": 4,
-    "votes": 60002
-  },
-  {
-    "rank": 4,
-    "model": "muse-spark-1.2 (xHigh)",
-    "vendor": "Meta",
-    "license": "proprietary",
-    "score": 1500,
-    "ci": 11,
-    "votes": 3227
+    "votes": 64007
   },
   {
     "rank": 5,
     "model": "claude-fable-5.1-max",
     "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1498,
-    "ci": 8,
-    "votes": 5783
+    "score": 1501,
+    "ci": 7,
+    "votes": 9942
   },
   {
     "rank": 6,
     "model": "claude-opus-4-6",
     "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1497,
+    "score": 1498,
     "ci": 3,
-    "votes": 75878
+    "votes": 80836
   },
   {
     "rank": 7,
-    "model": "claude-opus-4-7",
-    "vendor": "Anthropic",
+    "model": "muse-spark-1.2 (xHigh)",
+    "vendor": "Meta",
     "license": "proprietary",
-    "score": 1494,
-    "ci": 4,
-    "votes": 61128
+    "score": 1496,
+    "ci": 10,
+    "votes": 3422
   },
   {
     "rank": 8,
-    "model": "muse-spark-1.3-max",
-    "vendor": "Meta",
+    "model": "claude-opus-4-7",
+    "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1493,
-    "ci": 9,
-    "votes": 4723
+    "score": 1495,
+    "ci": 4,
+    "votes": 65051
   },
   {
     "rank": 9,
-    "model": "gemini-3.8-flash-high",
-    "vendor": "Google",
+    "model": "muse-spark-1.3-max",
+    "vendor": "Meta",
     "license": "proprietary",
-    "score": 1493,
-    "ci": 9,
-    "votes": 5076
+    "score": 1494,
+    "ci": 7,
+    "votes": 10036
   },
   {
     "rank": 10,
-    "model": "claude-opus-5-high",
-    "vendor": "Anthropic",
+    "model": "gemini-3.8-flash-high",
+    "vendor": "Google",
     "license": "proprietary",
-    "score": 1493,
-    "ci": 4,
-    "votes": 42617
+    "score": 1492,
+    "ci": 5,
+    "votes": 21728
   },
   {
     "rank": 11,
-    "model": "muse-spark-1.1",
-    "vendor": "Meta",
+    "model": "claude-opus-5-high",
+    "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1493,
-    "ci": 5,
-    "votes": 27615
+    "score": 1491,
+    "ci": 4,
+    "votes": 55063
   },
   {
     "rank": 12,
-    "model": "gemini-3.7-flash-high",
-    "vendor": "Google",
+    "model": "muse-spark-1.1",
+    "vendor": "Meta",
     "license": "proprietary",
-    "score": 1490,
-    "ci": 8,
-    "votes": 5640
+    "score": 1491,
+    "ci": 5,
+    "votes": 34760
   },
   {
     "rank": 13,
     "model": "muse-spark",
     "vendor": "Meta",
     "license": "proprietary",
-    "score": 1488,
+    "score": 1489,
     "ci": 6,
-    "votes": 13565
+    "votes": 14131
   },
   {
     "rank": 14,
     "model": "claude-opus-5-max",
     "vendor": "Anthropic",
     "license": "proprietary",
-    "score": 1487,
+    "score": 1488,
     "ci": 5,
-    "votes": 20706
+    "votes": 26760
   },
   {
     "rank": 15,
+    "model": "gemini-3.7-flash-high",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1488,
+    "ci": 5,
+    "votes": 19044
+  },
+  {
+    "rank": 16,
+    "model": "kimi-k3-max",
+    "vendor": "Moonshot",
+    "license": null,
+    "score": 1488,
+    "ci": 5,
+    "votes": 26400
+  },
+  {
+    "rank": 17,
     "model": "gemini-3.1-pro-preview",
     "vendor": "Google",
     "license": "proprietary",
     "score": 1487,
     "ci": 3,
-    "votes": 106951
+    "votes": 119196
   },
   {
-    "rank": 16,
+    "rank": 18,
     "model": "gemini-3-pro",
     "vendor": "Google",
     "license": "proprietary",
     "score": 1485,
     "ci": 4,
-    "votes": 40654
+    "votes": 41921
   },
   {
-    "rank": 17,
-    "model": "kimi-k3-max",
-    "vendor": "Moonshot",
-    "license": null,
-    "score": 1485,
-    "ci": 5,
-    "votes": 20987
-  },
-  {
-    "rank": 18,
+    "rank": 19,
     "model": "gpt-5.6-sol-xhigh",
     "vendor": "OpenAI",
     "license": "proprietary",
     "score": 1483,
     "ci": 5,
-    "votes": 27069
-  },
-  {
-    "rank": 19,
-    "model": "glm-5.3-max",
-    "vendor": "Z.ai",
-    "license": "open",
-    "score": 1483,
-    "ci": 6,
-    "votes": 10960
+    "votes": 34258
   },
   {
     "rank": 20,
+    "model": "gemini-3.6-flash-high",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1482,
+    "ci": 5,
+    "votes": 33739
+  },
+  {
+    "rank": 21,
     "model": "gpt-5.5-high",
     "vendor": "OpenAI",
     "license": "proprietary",
-    "score": 1482,
+    "score": 1481,
     "ci": 4,
-    "votes": 64924
+    "votes": 69008
+  },
+  {
+    "rank": 22,
+    "model": "claude-opus-4-8-high",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1480,
+    "ci": 4,
+    "votes": 61560
+  },
+  {
+    "rank": 23,
+    "model": "mimo-v2.6-pro",
+    "vendor": "Xiaomi",
+    "license": "open",
+    "score": 1480,
+    "ci": 9,
+    "votes": 4026
+  },
+  {
+    "rank": 24,
+    "model": "glm-5.3-max",
+    "vendor": "Z.ai",
+    "license": "open",
+    "score": 1480,
+    "ci": 6,
+    "votes": 15904
+  },
+  {
+    "rank": 25,
+    "model": "qwen3.8-max",
+    "vendor": "Alibaba",
+    "license": "proprietary",
+    "score": 1479,
+    "ci": 5,
+    "votes": 21561
+  },
+  {
+    "rank": 26,
+    "model": "gpt-6-astra-max",
+    "vendor": "OpenAI",
+    "license": "proprietary",
+    "score": 1478,
+    "ci": 8,
+    "votes": 7185
+  },
+  {
+    "rank": 27,
+    "model": "gemini-3.5-flash-high",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1477,
+    "ci": 4,
+    "votes": 46190
+  },
+  {
+    "rank": 28,
+    "model": "gpt-5.5",
+    "vendor": "OpenAI",
+    "license": "proprietary",
+    "score": 1477,
+    "ci": 4,
+    "votes": 70635
+  },
+  {
+    "rank": 29,
+    "model": "deepseek-v4.1-flash-max",
+    "vendor": "DeepSeek",
+    "license": "open",
+    "score": 1477,
+    "ci": 8,
+    "votes": 6630
+  },
+  {
+    "rank": 30,
+    "model": "gpt-5.2-chat-latest-20260210",
+    "vendor": "OpenAI",
+    "license": "proprietary",
+    "score": 1476,
+    "ci": 4,
+    "votes": 35962
   }
 ]
