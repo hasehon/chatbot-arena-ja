@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-09-26",
+  "baseline_date": "2026-09-27",
   "baseline": {
     "text": {
       "claude-opus-5.5-high": 1,
@@ -53,7 +53,17 @@
       "grok-4.6-high": 17,
       "glm-5.3-max": 18,
       "mimo-v2.6-pro": 19,
-      "gpt-5.6-sol-xhigh (codex-harness)": 20
+      "gpt-5.6-sol-xhigh (codex-harness)": 20,
+      "glm-5.3-flash": 21,
+      "glm-5.2-max": 22,
+      "gemini-3.7-flash-high": 23,
+      "gpt-6-luna-max": 24,
+      "qwen3.8-27b": 25,
+      "deepseek-v4-pro-high-20260813": 26,
+      "deepseek-v4-flash-high": 27,
+      "gemini-3.8-flash-high": 28,
+      "step-5-preview-high": 29,
+      "claude-opus-4-7-high": 30
     },
     "vision": {
       "claude-fable-5-high": 1,
@@ -75,17 +85,7 @@
       "gemini-3.5-flash-high": 17,
       "claude-opus-4-8-high": 18,
       "gpt-5.5-high": 19,
-      "gemini-3.5-flash-medium": 20,
-      "gemini-3.6-flash-high": 21,
-      "muse-spark-1.1": 22,
-      "gpt-5.4": 23,
-      "grok-4.5": 24,
-      "claude-opus-4-8": 25,
-      "gemini-3.1-pro-preview": 26,
-      "gpt-5.2-chat-latest-20260210": 27,
-      "gpt-5.5-instant": 28,
-      "claude-sonnet-4-6": 29,
-      "glm-5.3-flash": 30
+      "gemini-3.5-flash-medium": 20
     },
     "text-to-image": {
       "gpt-image-2.5-sunburst": 1,
@@ -170,7 +170,7 @@
       "bagel": 80
     }
   },
-  "latest_date": "2026-09-27",
+  "latest_date": "2026-09-28",
   "latest": {
     "text": {
       "claude-opus-5.5-high": 1,
