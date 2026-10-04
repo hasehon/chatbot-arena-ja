@@ -358,5 +358,95 @@
     "score": 1473,
     "ci": 5,
     "votes": 27098
+  },
+  {
+    "rank": 41,
+    "model": "glm-5.3-flash",
+    "vendor": "Z.ai",
+    "license": "open",
+    "score": 1473,
+    "ci": 5,
+    "votes": 22971
+  },
+  {
+    "rank": 42,
+    "model": "gemini-3-flash",
+    "vendor": "Google",
+    "license": "proprietary",
+    "score": 1473,
+    "ci": 4,
+    "votes": 31259
+  },
+  {
+    "rank": 43,
+    "model": "claude-sonnet-4-6",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1472,
+    "ci": 4,
+    "votes": 70747
+  },
+  {
+    "rank": 44,
+    "model": "grok-4.20-beta-0309-reasoning",
+    "vendor": "SpaceXAI",
+    "license": "proprietary",
+    "score": 1472,
+    "ci": 4,
+    "votes": 66334
+  },
+  {
+    "rank": 45,
+    "model": "claude-sonnet-5.5-xhigh",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1471,
+    "ci": 10,
+    "votes": 3145
+  },
+  {
+    "rank": 46,
+    "model": "grok-4.20-multi-agent-beta-0309",
+    "vendor": "SpaceXAI",
+    "license": "proprietary",
+    "score": 1471,
+    "ci": 4,
+    "votes": 64788
+  },
+  {
+    "rank": 47,
+    "model": "claude-opus-4-5-20251101",
+    "vendor": "Anthropic",
+    "license": "proprietary",
+    "score": 1470,
+    "ci": 3,
+    "votes": 72772
+  },
+  {
+    "rank": 48,
+    "model": "ernie-5.1",
+    "vendor": "Baidu",
+    "license": "proprietary",
+    "score": 1468,
+    "ci": 5,
+    "votes": 39396
+  },
+  {
+    "rank": 49,
+    "model": "mimo-v2.5-pro",
+    "vendor": "Xiaomi",
+    "license": "open",
+    "score": 1468,
+    "ci": 4,
+    "votes": 70871
+  },
+  {
+    "rank": 50,
+    "model": "grok-4.5",
+    "vendor": "SpaceXAI",
+    "license": "proprietary",
+    "score": 1466,
+    "ci": 4,
+    "votes": 39789
   }
 ]

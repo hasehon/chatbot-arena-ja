@@ -156,7 +156,7 @@
     "rank": 18,
     "model": "qwen-image-2.1",
     "vendor": "Alibaba",
-    "license": "proprietary",
+    "license": "open",
     "score": 1228,
     "ci": 9,
     "votes": 4445
