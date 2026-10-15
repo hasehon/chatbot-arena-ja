@@ -1,0 +1,4 @@
+text: HTTP Error 404: Not Found
+code: HTTP Error 404: Not Found
+vision: HTTP Error 404: Not Found
+text-to-image: HTTP Error 404: Not Found
