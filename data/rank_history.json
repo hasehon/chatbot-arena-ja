@@ -1,5 +1,5 @@
 {
-  "baseline_date": "2026-10-22",
+  "baseline_date": "2026-10-23",
   "baseline": {
     "text": {
       "gemini-4-argon-high": 1,
@@ -90,7 +90,7 @@
       "ideogram-4.0-quality": 20
     }
   },
-  "latest_date": "2026-10-23",
+  "latest_date": "2026-10-24",
   "latest": {
     "text": {
       "gemini-4-argon-high": 1,
